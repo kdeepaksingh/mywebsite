@@ -1,0 +1,70 @@
+<div class="row w-100" id="sidenavAccordion">
+    <div class="col-2 card-section" style="height: 530px;">
+        <mat-sidenav-container>
+            <div class="">
+                <a [routerLink]="'dashboard'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-home" style="font-size:15px;"></i>
+                    <span class="ml-2">Dashboards</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'customers'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-users" style="font-size:15px;"></i>
+                    <span class="ml-2">Customers</span>
+                </a>
+            </div>
+
+            <div class="">
+                <a [routerLink]="'payments'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-credit-card" style="font-size:15px;"></i>
+                    <span class="ml-2">Payments</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'loans'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-address-card" style="font-size:15px;"></i>
+                    <span class="ml-2">Loans</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'loan-types'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-address-card" style="font-size:15px;"></i>
+                    <span class="ml-2">Loan Plans</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'reports'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-line-chart" style="font-size:15px;"></i>
+                    <span class="ml-2">Reports</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'invoices'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-address-card" style="font-size:15px;"></i>
+                    <span class="ml-2">Invoicees</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'audit'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-home" style="font-size:15px;"></i>
+                    <span class="ml-2">Audit</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'activity'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-home" style="font-size:15px;"></i>
+                    <span class="ml-2">Activity</span>
+                </a>
+            </div>
+            <div class="">
+                <a [routerLink]="'settings'" routerLinkActive="active" class="list-group-item heading-section side_nav_style">
+                    <i class="fa fa-cog" style="font-size:15px;"></i>
+                    <span class="ml-2">Settings</span>
+                </a>
+            </div>
+        </mat-sidenav-container>
+    </div>
+    <div class="col-10">
+        <router-outlet></router-outlet>
+    </div>
+</div>
